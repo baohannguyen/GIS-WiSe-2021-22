@@ -1,0 +1,13 @@
+/* Smartphone Darstellung */
+
+/* Table Darstellung */
+@media screen and (min-width: 600px) {
+
+}
+
+/* PC Darstellung */
+@media screen and (min-width: 1024px) {
+    h1 {
+        color: lightblue;
+    }
+}
