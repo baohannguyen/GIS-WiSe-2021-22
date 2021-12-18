@@ -1,4 +1,22 @@
 /* Smartphone Darstellung */
+body {
+    width: 800px;
+    margin: auto;
+    background-image: url("bg.png");
+    font-family: sans-serif;
+    text-decoration: none;
+    
+}
+main {
+    background-color: lightblue;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 2%;
+}
+
 
 /* Table Darstellung */
 @media screen and (min-width: 600px) {
@@ -7,7 +25,5 @@
 
 /* PC Darstellung */
 @media screen and (min-width: 1024px) {
-    h1 {
-        color: lightblue;
-    }
+    
 }
