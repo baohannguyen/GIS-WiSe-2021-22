@@ -1,29 +1,109 @@
-/* Smartphone Darstellung */
+/* Allgemeine und Smartphone Darstellung */
 body {
-    width: 800px;
+    width: 350px;
     margin: auto;
     background-image: url("bg.png");
     font-family: sans-serif;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 main {
     background-color: lightblue;
+    color: grey;
 }
-
 nav a {
-    font-size: 1.5em;
-    text-decoration: none;
-    padding: 2%;
+    font-size: 0.9em;
+    padding: 0.2%;
+    text-decoration: none; 
 }
-
+.navigation {
+    position: sticky;
+    top: 0;
+}
+.hover:hover {
+    color: royalblue;
+}
+#indexhover {
+    color: black;
+}
+#indexhover:hover{
+    color: royalblue;
+}
+h1 {
+    font-size: 1.5em;
+    color: white;
+    position: relative;
+    left: 115px;
+}
+.portrait {
+    width: 120px;
+    border: 0.5px solid grey;
+    border-radius: 80px;
+    position: relative;
+    top: 0;
+    left: 115px;
+}
+.uni {
+    width: 150px;
+    border: 0.5px solid grey;
+    position: relative;
+    left: 100px;
+}
+p a {
+    text-decoration: none;
+}
+#backtopage {
+    color: white;
+}
 
 /* Table Darstellung */
 @media screen and (min-width: 600px) {
-
+    body {
+        width: 600px;
+        margin: auto;
+    }
+    h1 {
+        font-size: 1.7em;
+        position: relative;
+        left: 230px;
+    }
+    .portrait {
+        width: 150px;
+        position: relative;
+        top: 0;
+        left: 220px;
+    }
+    .uni {
+        width: 170px;
+        position: relative;
+        left: 210px;
+    }
+    nav a {
+        font-size: 1.2em;     
+    }
 }
 
 /* PC Darstellung */
 @media screen and (min-width: 1024px) {
-    
+    body {
+        width: 800px;
+        margin: auto;
+    }
+    h1 {
+        font-size: 2em;
+        position: relative;
+        left: 330px;
+    }
+    .portrait {
+        width: 180px;
+        border-radius: 80%;
+        position: relative;
+        top: 0;
+        left: 310px;
+    }
+    .uni {
+        width: 200px;
+        position: relative;
+        left: 300px;
+    }    
+        
 }
