@@ -7,46 +7,50 @@ body {
     text-decoration: none;   
 }
 main {
-    background-color: lightblue;
-    color: grey;
+    background-color:rgb(207, 194, 255);
+    color: gray;
 }
 nav a {
     font-size: 0.9em;
-    padding: 0.2%;
     text-decoration: none; 
 }
 .navigation {
     position: sticky;
     top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
 }
 .hover:hover {
     color: royalblue;
 }
-#indexhover {
+.mainhover {
     color: black;
 }
 #indexhover:hover{
     color: royalblue;
 }
-h1 {
-    font-size: 1.5em;
+#start {
+    font-size: 1.3em;
     color: white;
-    position: relative;
-    left: 115px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+/*Steckbrief*/
 .portrait {
     width: 120px;
     border: 0.5px solid grey;
     border-radius: 80px;
-    position: relative;
-    top: 0;
-    left: 115px;
 }
-.uni {
+.unipicture {
     width: 150px;
     border: 0.5px solid grey;
-    position: relative;
-    left: 100px;
+}
+#uniposition {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 p a {
     text-decoration: none;
@@ -54,31 +58,77 @@ p a {
 #backtopage {
     color: white;
 }
-
-/* Table Darstellung */
+.box {
+    border: 0.2px solid transparent;
+    padding: 5px 5px 10px 0px;
+    margin: 3px 3px 3px 0px;
+}
+#profil {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*Portfolio*/
+.title {
+    font-size: 1.3em;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.blenderpic {
+    width: 340px;
+    border-radius: 5%;
+}
+.blenderposition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+#helloworld {
+    width: 340px;   
+}
+#videoposition {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.othertitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* Tablet Darstellung */
 @media screen and (min-width: 600px) {
     body {
         width: 600px;
         margin: auto;
     }
-    h1 {
+    #start {
         font-size: 1.7em;
-        position: relative;
-        left: 230px;
     }
+    /*Steckbrief*/
     .portrait {
         width: 150px;
         position: relative;
-        top: 0;
-        left: 220px;
     }
-    .uni {
-        width: 170px;
-        position: relative;
-        left: 210px;
+    .unipicture {
+        width: 200px;
     }
     nav a {
         font-size: 1.2em;     
+    }
+    /*Portfolio*/
+    .title {
+        font-size: 1.5em;
+    }
+    .blenderpic {
+        width: 590px;
+        border-radius: 5%;
+    }
+    #helloworld {
+        width: 590px;   
     }
 }
 
@@ -88,22 +138,24 @@ p a {
         width: 800px;
         margin: auto;
     }
-    h1 {
+    #start {
         font-size: 2em;
-        position: relative;
-        left: 330px;
     }
+    /*Steckbrief*/
     .portrait {
         width: 180px;
         border-radius: 80%;
-        position: relative;
-        top: 0;
-        left: 310px;
     }
-    .uni {
-        width: 200px;
-        position: relative;
-        left: 300px;
-    }    
+    .unipicture {
+        width: 230px;
+    }
+    /*Portfolio*/
+    .title {
+        font-size: 1.7em;
+    }
+    .blenderpic {
+        width: 770px;
+        border-radius: 5%;
+    }  
         
 }

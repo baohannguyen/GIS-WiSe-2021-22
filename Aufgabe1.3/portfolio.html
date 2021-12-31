@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
-<body>
-    <header>
+<body id="anfang">
+    <header class="navigation">
         <nav>
-            <a href="index.html">Steckbrief</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="kontakt.html">Kontakt</a>
+            <a class="hover" href="index.html">Steckbrief</a>
+            <a class="mainhover" href="portfolio.html">Portfolio</a>
+            <a class="hover" href="kontakt.html">Kontakt</a>
         </nav>
     </header>
     <main>
-        <p><b>Meine Werke in Blender</b></p>
-        <img src="clownfisch.jpg" alt="Clownfisch">
-        <img src="Unterwasserszene.jpg" alt="Unterwasserwelt">
-        <p><i>Ein paar Audio-Aufnahmen (nicht von mir)</i></p>
+        <p><b class="title">Meine Werke in Blender</b></p>
+        <div class="blenderposition">
+            <img class="blenderpic" src="clownfisch.jpg" alt="Clownfisch">
+            <img class="blenderpic" src="Unterwasserszene.jpg" alt="Unterwasserwelt">
+        </div>
+        <p><i class="othertitle">Ein paar Audio-Aufnahmen (nicht von mir)</i></p>
         <audio src="bensound-cute.mp3" controls></audio> Royalty Free Music from <a href="https://www.bensound.com/royalty-free-music/track/cute">Bensound (also known as Bensound)</a>
         <p><audio src="bensound-retrosoul.mp3" controls></audio> Royalty Free Music from <a href="https://www.bensound.com/royalty-free-music/track/retro-soul">Bensound (also knwon as Bensound)</a></p>
-        <p><em>Video-Beispiel</em></p>
-        <video src="HelloWorld.mp4" controls></video>
+        <p><em class="othertitle">Video-Beispiel</em></p>
+        <div id="videoposition">
+            <video id="helloworld" src="HelloWorld.mp4" controls></video>
+        </div>
     </main>
     <footer>
         Zurück zum <a href="#anfang">Portfolio</a>
