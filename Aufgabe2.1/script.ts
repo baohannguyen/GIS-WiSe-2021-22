@@ -37,7 +37,7 @@ function funct2(): void {
 
 function funct3(): void {
     console.log("Alles Logo!");
-    
+
 }
 
 //Aufgabe 2
@@ -47,7 +47,7 @@ function a2(): void {
     do {
         console.log(i);
         i = i - 1;
-    } while ( i > 0);
+    } while (i > 0);
 }
 
 a2();
@@ -74,7 +74,7 @@ function func2(): void {
 }
 
 function func3(): void {
-    x = "Test";  
+    x = "Test";
 }
 //a)
 //Hallo, Bla, Hallo, Blubb, Test
@@ -89,7 +89,59 @@ function func3(): void {
 //a)
 function multiply(_num1: number, _num2: number): number {
     let ergebnis: number = _num1 * _num2;
-    return ergebnis;   
+    return ergebnis;
 }
 console.log(multiply(5, 2)); //Wenn man eine Funktion aufrufen möchte -> Name der Funktion und evtl. noch die Werte der Parameter eingeben
+
+//b)
+function max(_firstnumber: number, _secondnumber: number): number {
+    if (_firstnumber > _secondnumber) {
+        return _firstnumber;
+    } else {
+        return _secondnumber;
+    }
+}
+console.log(max(5, 6));
+
+//c)
+// let i: number = 0;
+// function counter(): void {
+//     while (i < 100) {
+//         i = i + 1;
+//         console.log(i);
+//     }
+// }
+// counter();
+
+// //d)
+// function random(): void {
+//     for (let i: number = 0; i < 10; i++) { // i < 10 -> gibt uns 10 Zahlen auf der Konsole aus
+//         return console.log(Math.floor(Math.random() * 100));
+//     }
+// }
+// random();
+
+//e)
+function factorial(_factnum: number): number {
+    let total: number = 1;
+    if (_factnum < 1) {
+        return 1;
+    } else {
+        for (let i: number = 1; i <= _factnum; i++) { // mit 1 wird angefangen, weil sonst mit 0 multipliziert wird
+                total = total * i;
+        }
+    }
+    return total;
+}
+console.log(factorial(5));
+
+//f)
+function leapyears(): void {
+    for (let i: number = 1900; i < 2022; i++) {
+        if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0)) {
+            console.log(i);         
+        }
+    }
+}
+leapyears();
 

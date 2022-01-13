@@ -76,4 +76,53 @@ function multiply(_num1, _num2) {
     return ergebnis;
 }
 console.log(multiply(5, 2)); //Wenn man eine Funktion aufrufen möchte -> Name der Funktion und evtl. noch die Werte der Parameter eingeben
+//b)
+function max(_firstnumber, _secondnumber) {
+    if (_firstnumber > _secondnumber) {
+        return _firstnumber;
+    }
+    else {
+        return _secondnumber;
+    }
+}
+console.log(max(5, 6));
+//c)
+// let i: number = 0;
+// function counter(): void {
+//     while (i < 100) {
+//         i = i + 1;
+//         console.log(i);
+//     }
+// }
+// counter();
+// //d)
+// function random(): void {
+//     for (let i: number = 0; i < 10; i++) { // i < 10 -> gibt uns 10 Zahlen auf der Konsole aus
+//         return console.log(Math.floor(Math.random() * 100));
+//     }
+// }
+// random();
+//e)
+function factorial(_factnum) {
+    let total = 1;
+    if (_factnum < 1) {
+        return 1;
+    }
+    else {
+        for (let i = 1; i <= _factnum; i++) { // mit 1 wird angefangen, weil sonst mit 0 multipliziert wird
+            total = total * i;
+        }
+    }
+    return total;
+}
+console.log(factorial(5));
+//f)
+function leapyears() {
+    for (let i = 1900; i < 2022; i++) {
+        if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0)) {
+            console.log(i);
+        }
+    }
+}
+leapyears();
 //# sourceMappingURL=script.js.map
