@@ -4,7 +4,9 @@
   "description": "Hello again!",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^17.0.10"
+  },
   "scripts": {
     "start": "node ./Prüfungsaufgabe/server.js",
     "test": "node ./Prüfungsaufgabe/server.js"
