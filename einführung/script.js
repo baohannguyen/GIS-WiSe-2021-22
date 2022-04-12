@@ -4,7 +4,10 @@ alert("Das ist eine Warnung");
 
 const divElement = document.getElementById("div-element");
 
-console.log(divElement); 
+console.log(divElement);
+
+let text = "Das ist ein Text";
+text = "das ist der neue Wert"
 
 divElement.textContent = "Das ist der neue Wert"; //damit kann man z.b den inhalt im div element ändern
 divElement.classList.add("test-classe");
